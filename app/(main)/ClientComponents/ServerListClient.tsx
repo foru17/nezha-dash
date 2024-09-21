@@ -38,9 +38,13 @@ export default function ServerListClient() {
       {Object.entries(groupedServers).map(([tag, servers]) => (
         <div key={tag}>
           <h2 className="text-lg font-bold">{tag}</h2>
-          {servers.map((serverInfo) => (
-            <ServerCard key={serverInfo.id} serverInfo={serverInfo} />
-          ))}
+          <div className="mt-2">
+            {servers.map((serverInfo) => (
+              <div className="mb-2">
+                <ServerCard key={serverInfo.id} serverInfo={serverInfo} />
+              </div>
+            ))}
+          </div>
         </div>
       ))}
     </section>
