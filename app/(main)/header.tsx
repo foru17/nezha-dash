@@ -1,10 +1,10 @@
 "use client";
 
-import React, { useEffect, useRef, useState } from "react";
-import Image from "next/image";
+import { ModeToggle } from "@/components/ThemeSwitcher";
 import { Separator } from "@/components/ui/separator";
 import { DateTime } from "luxon";
-import { ModeToggle } from "@/components/ThemeSwitcher";
+import Image from "next/image";
+import { useEffect, useRef, useState } from "react";
 
 function Header() {
   return (
@@ -21,13 +21,14 @@ function Header() {
               className="relative !m-0 h-6 w-6 border-2 border-white object-cover object-top !p-0 transition duration-500 group-hover:z-30 group-hover:scale-105"
             />
           </div>
-          NezhaDash
+          ZUOLUOTV Monitor
           <Separator
             orientation="vertical"
             className="mx-2 hidden h-4 w-[1px] md:block"
           />
           <p className="hidden text-sm font-medium opacity-40 md:block">
-            Simple and beautiful dashboard
+            A Dashboard of <a href="https://x.com/luoleiorg">@luoleiorg</a>'s{" "}
+            services
           </p>
         </section>
         <ModeToggle />

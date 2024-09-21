@@ -1,11 +1,11 @@
 import "@/styles/globals.css";
 
-import type { Metadata } from "next";
-import { Inter as FontSans } from "next/font/google";
-import { ThemeProvider } from "next-themes";
-import React from "react";
-import { Viewport } from "next";
 import { cn } from "@/lib/utils";
+import type { Metadata } from "next";
+import { Viewport } from "next";
+import { ThemeProvider } from "next-themes";
+import { Inter as FontSans } from "next/font/google";
+import React from "react";
 
 const fontSans = FontSans({
   subsets: ["latin"],
@@ -14,8 +14,8 @@ const fontSans = FontSans({
 
 export const metadata: Metadata = {
   manifest: "/manifest.json",
-  title: "NezhaDash",
-  description: "A dashboard for nezha",
+  title: "Monitor",
+  description: "A dashboard for monitoring your services.",
   appleWebApp: {
     capable: true,
     title: "NezhaDash",
